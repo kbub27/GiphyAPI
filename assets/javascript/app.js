@@ -29,9 +29,9 @@ $(document).ready(function () {
             console.log(response);
             for (let i = 0; i < response.data.length; i++) {
                 console.log(response.data[i]);
-                $('.gifs').append('<div class="col ' + i + '">');
-                $('.' + i).append('<img src="'+ response.data[i].images.fixed_height_small_still.url + '" data-still="' + response.data[i].images.fixed_height_small_still.url + '" data-animate="' + response.data[i].images.fixed_height_small.url + '" data-state="still">');
-                $('.' + i).append(response.data[i].rating);
+                $('.gifs').append('<div class="image' + i + '">');
+                $('.image' + i).append('<img src="'+ response.data[i].images.fixed_height_small_still.url + '" data-still="' + response.data[i].images.fixed_height_small_still.url + '" data-animate="' + response.data[i].images.fixed_height_small.url + '" data-state="still">');
+                $('.image' + i).append(response.data[i].rating);
 
             }
         })
