@@ -10,6 +10,16 @@ img {
     margin: 5px;
 }
 
+.form-control,
+.submit {
+    margin: 5px;
+}
+.gifs{
+    display: flex;
+    flex-wrap: wrap;
+    text-align:center
+}
+
 .image0,
 .image1,
 .image2,
