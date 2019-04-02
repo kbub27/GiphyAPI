@@ -1,9 +1,10 @@
 body {
     height: 100%;
+    background-color: black
 }
 
 .btn {
-    margin: 5px;
+    margin: 5px 5px 5px 0px;
 }
 
 img {
@@ -12,7 +13,7 @@ img {
 
 .form-control,
 .submit {
-    margin: 5px;
+    margin: 5px 5px 10px 0px;
 }
 
 .gifs{
@@ -21,3 +22,6 @@ img {
     text-align:center
 }
 
+.container {
+    background-color: antiquewhite
+}
