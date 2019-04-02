@@ -1,5 +1,7 @@
 # GiphyAPI
-Web page that gives you gifs
+**Web page that gives you GIFS**
+
+**[Search Here](https://kbub27.github.io/GiphyAPI/)**
 
 **Search Your Sport**
 * Enter the sport you want to search for 
