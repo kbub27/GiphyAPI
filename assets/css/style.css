@@ -1,9 +1,11 @@
 body {
     height: 100%;
-    background-color: black
+    background-color: black;
+    text-align: center
 }
 
-.btn {
+.btn,
+.returnAmnt {
     margin: 5px 5px 5px 0px;
 }
 
@@ -26,6 +28,8 @@ img {
     background-color: antiquewhite
 }
 
-.returnAmnt {
-    margin: 10px;
+.search {
+    text-align: left;
 }
+
+
