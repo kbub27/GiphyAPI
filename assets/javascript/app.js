@@ -2,7 +2,12 @@ $(document).ready(function () {
 
     // ARRAY OF STRINGS BASED ON THE THEME OF SPORTS
     var sports = ['Basketball', 'Football', 'Soccer', 'Lacrosse', 'Cricket'];
-    var rating = '';
+    var amnt = 10;
+
+    $(document).on('click', '.returnAmnt', function () {
+        amnt = $(this).text();
+        console.log(amnt);
+    })
     // CREATE A FUNCTION TO LOOP THROUGH ARRAY AND CREATE A BUTTON FOR EACH ELEMENT IN THE ARRAY
     function makeBtns() {
         $('.btns').empty();
@@ -21,7 +26,7 @@ $(document).ready(function () {
     $(document).on('click', '.btn', function () {
         $('.gifs').empty();
         var btnVal = $(this).text();
-        var giphyURL = 'https://api.giphy.com/v1/gifs/search?q=' + btnVal + '&api_key=M4QerXA1BTog7T6M4tVp4T87xtAk8rXK&limit=10';
+        var giphyURL = 'https://api.giphy.com/v1/gifs/search?q=' + btnVal + '&api_key=M4QerXA1BTog7T6M4tVp4T87xtAk8rXK&limit=' + amnt;
         $.ajax({
             url: giphyURL,
             method: 'GET'
