@@ -4,6 +4,7 @@ $(document).ready(function () {
     var sports = ['Basketball', 'Football', 'Soccer', 'Lacrosse', 'Cricket'];
     var amnt = 10;
 
+    //FUNCTION TO RETURN THE AMOUNT OF GIFS DISPLAYED ON PAGE
     $(document).on('click', '.returnAmnt', function () {
         amnt = $(this).text();
         console.log(amnt);
@@ -16,6 +17,7 @@ $(document).ready(function () {
         }
     };
 
+    // CLICK FUNCTION TO GRAB THE VALUE FROM THE SEARCH AND MAKE A BUTTON FROM THAT VALUE
     $('.submit').click(function () {
         var searchVal = $('.form-control').val();
         sports.push(searchVal);
