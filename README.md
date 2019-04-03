@@ -13,5 +13,6 @@
 ---
 
 **Display GIFS**
+* Click the red number for how many returns on that search that you want.
 * Click a button you made or a button that was already at the top of the page
 * Get GIFS
